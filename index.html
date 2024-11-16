@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Alerts</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <!-- Header with Navigation and Dark Mode Toggle -->
+        <header>
+            <nav>
+                <div class="logo">
+                    <h1>Weather Alerts</h1>
+                </div>
+                <div class="nav-links">
+                    <a href="#" id="sign-in">Sign In</a>
+                    <a href="#" id="sign-up">Sign Up</a>
+                </div>
+                <div class="toggle-container">
+                    <label for="dark-mode-toggle">Dark Mode</label>
+                    <input type="checkbox" id="dark-mode-toggle" />
+                </div>
+            </nav>
+        </header>
+
+        <!-- City Input and Weather Info Section -->
+        <div class="city-selector">
+            <label for="manual-city">Enter a City:</label>
+            <input type="text" id="manual-city" placeholder="Type city name" value="New Delhi" />
+            <button id="search-button">Search</button>
+        </div>
+
+        <div class="weather-info">
+            <h2 id="city-name">Weather Information</h2>
+            <div id="weather-description"></div>
+            <div id="weather-details"></div>
+            <div id="alert-info"></div>
+        </div>
+
+        <!-- Footer -->
+        <footer>
+            <p>&copy; 2024 Weather Alerts. Stay Safe!</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
